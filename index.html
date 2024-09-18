@@ -1,72 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kanyaraasi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIH1545-BY-KanyaRaasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
-	<div id="container">
-	    <center><h1>SIH1545</h1></center>
-	    <center><p>By Team</p></center>
-	    <center><p style="margin-left:150px;font-size:120%;font-weight:700;">-KanyaRaasi</p></center>
-		<p style="font-weight:700;font-size:120%;">Probelm Statement</p>
-		<p style="text-indent:150px;">Development of a non-electrical device for tracking the movement of the sun for movement of the solar panels, increasing their efficiency.</p><br>
-		<p style="font-weight:700;font-size:120%;">Idea Title</p>
-		<ul style="list-style-position:inside;">
-			<li>Tracking the movement of sunlight using Artificial Heliotropism</li>
-			<li>Heliotropism is the property of an object or plant to grow or move in the
-direction of sunlight. Ex-SUNFLOWER</li>
-			<li>We are going to use Liquid Crystal Polymer and this acts as an compression machine making the Solar panel bend towards the sun.</li>
-			<li>The polymer compresses when the sunlight hits the polymer and comes back in place when there is no sunlight hitting it, making the panel to come back in place</li>
-			<li>We are not using Exisiting Technologies. We are trying to bring in a plant property into Artificial Usage.</li>
-		</ul><br/>
-		<p style="font-weight:700;font-size:120%;">TECHNICAL APPROACH</p>
-		<ul style="list-style-position:inside;">
-			<li>Spring Technology</li>
-			<li>Elastomer Technology</li>
-			<li>Liquid Crystal Polymer</li>
-		</ul><br/>
-		<p style="font-weight:700;font-size:120%;">Working images</p>
-		<div id="imagediv">
-			<img src="images/1.png"/>
-			<img src="images/2.png"/>
-			<img src="images/3.png"/>
-			<img src="images/4.png"/>
-			<img src="images/5.png"/>
-		</div><br/>
-		<p style="font-weight:700;font-size:120%;">FEASIBILITY AND VIABILITY</p>
-		<ul style="list-style-position:inside;">
-			<li>There is no removal of materials,we can easily install this polymer to our existing solar power plants also.</li>
-			<li>This Material is not ready made and not easily found .It should be made in laboratories</li>
-			<li>With proper inks and heavy usage of this polymer, can make the polymer easily available</li>
-		</ul>
-		<br/>
-		<p style="font-weight:700;font-size:120%;">IMPACT AND BENEFITS</p>
-		<ul style="list-style-position:inside;">
-			<li>Places where sun doesn’t set like the North of arctic circle,we can use this kind of model to get its maximum utilization</li>
-			<li>When we use a unidirectional solar panel we generally use just 43% of solar energy but this kind of hybrid model we can achieve more activity from the panel</li>
-		</ul>
-		<br/>
-		<p style="font-weight:700;font-size:120%;">RESEARCH AND REFERENCES</p>
-		<ul style="list-style-position:inside;">
-			<li>Renewable Energy Sources And Emerging Technologies-DP Kotari,KC Single, Rakesh Rajan-TEXTBOOK</li>
-			<li>Renewable and Sustainable Energy Reviews 13(2009) 1800-1818</li>
-			<li>Nanomaterials-Embedded Liquid Crystal Elastomers-</li>
-			<li>Automated photo aligned liquid crystal elastomer film fabrication with a low-tech ,home built roboric work station</li>
-			<li>Design and Applications of Light Responsive Liquid Crystal Polymer Thin Flims</li>
-		</ul>
-		<br/>
-		<p style="font-weight:700;font-size:120%;">Our Working Demonstration:</p>
-    	<video style="width:100%;" controls autoplay loop muted>
-    		<source src="sih.mp4" type="video/mp4">
-    	</video><br>
-		<p style="font-weight:700;font-size:120%;">Feel our working demonstration by changing the sun's direction:</p>
-    	<iframe src="src/jaswanth.html" width="100%" height="600"></iframe>
-    	<br/>
-    	<p style="font-weight:700;font-size:120%;">PPT presentation</p>
-    	<embed src="https://drive.google.com/file/d/1siFVVSXmorOrebXCG0X_oA4GixsOhAf6/preview" width="100%" height="600"></embed>
+
+    <!-- Header with Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SIH1545</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#demo">Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#research">Research</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="p-5 text-center d-flex align-items-center">
+    <div class="container">
+    	<br><br>
+        <h1 class="display-4 page-title">Welcome to SIH1545 By Team KanyaRaasi</h1>
+        <p class="lead">
+            Our project focuses on developing a non-electrical device for tracking the movement of the sun to increase the efficiency of solar panels. Inspired by artificial heliotropism, similar to the behavior of a sunflower, we use a Liquid Crystal Polymer to allow solar panels to bend towards sunlight. This polymer compresses under sunlight and reverts when no light is present, making the solar panels track the sun naturally.
+        </p>
+        <p>
+            <strong>Technical Approach:</strong> Our approach incorporates various technologies, including Spring Technology, Elastomer Technology, and Liquid Crystal Polymer, to make the movement efficient and non-electrical.
+        </p>
+        <p>
+            <strong>Impact & Benefits:</strong> By using this hybrid model, solar panels can reach up to 43% solar energy utilization, and this can be applied even in regions with extended sunlight exposure like the Arctic Circle.
+        </p>
+
+        <!-- Gallery -->
+        <div class="gallery mt-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <img src="images/1.png" alt="Image 1" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <img src="images/2.png" alt="Image 2" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <img src="images/3.png" alt="Image 3" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <img src="images/4.png" alt="Image 4" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <img src="images/5.png" alt="Image 5" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+
+
+    <!-- Demo Section -->
+<section id="demo" class="p-5 text-center demo-section">
+    <div class="container">
+        <h2 class="demo-title">Demo</h2>
+        <div class="row justify-content-center">
+            <!-- Demo Video Card -->
+            <div class="col-lg-5 col-md-6 mb-4">
+                <div class="card demo-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Demo Video</h5>
+                        <video width="100%" controls autoplay loop muted>
+                            <source src="sih.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <!-- Godot Game Card -->
+            <div class="col-lg-5 col-md-6 mb-4">
+                <div class="card demo-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Godot Game Demo</h5>
+                        <iframe src="src/jaswanth.html" width="100%" height="400"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <section id="research" class="p-5 text-center research">
+    <div class="container">
+        <h2 class="page-title">Research</h2>
+        <div class="row">
+            <!-- Research Links in a Box -->
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="research-box">
+                    <a href="https://drive.google.com/file/d/1iy8bClkBzVpagnaIc6CAvgx6wwc0wCj5/preview" target="_blank" download>
+                        <img src="documents/photos/1.png" alt="Research 1" class="img-fluid">
+                        <p class="research-name">Research 1</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="research-box">
+                    <a href="https://drive.google.com/file/d/1a3T6vE6tCML2uWlGiZiDlT33Muvb0VcY/preview" target="_blank">
+                        <img src="documents/photos/2.png" alt="Research 2" class="img-fluid">
+                        <p class="research-name">Research 2</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="research-box">
+                    <a href="https://drive.google.com/file/d/11dtsF0zGVC1EmnH0DLhKq4Ih7f_UUL1W/preview" target="_blank">
+                        <img src="documents/photos/3.png" alt="Research 3" class="img-fluid">
+                        <p class="research-name">Research 3</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="research-box">
+                    <a href="https://drive.google.com/file/d/1ENrlmhdccH2n6hDgmlrhzWh1ZmaLgM61/preview" target="_blank">
+                        <img src="documents/photos/4.png" alt="Research 3" class="img-fluid">
+                        <p class="research-name">Research 3</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="research-box">
+                    <a href="https://drive.google.com/file/d/1dUnTAQWuKg3JhCWyjsknDF1HcqtPF7wr/preview" target="_blank">
+                        <img src="documents/photos/5.png" alt="Research 3" class="img-fluid">
+                        <p class="research-name">Research 3</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="research-box">
+                    <a href="https://drive.google.com/file/d/16xlNvGa2olvZnMvYDmy3qUTbmrudT0v6/preview" target="_blank">
+                        <img src="documents/photos/6.png" alt="Research 3" class="img-fluid">
+                        <p class="research-name">Research 3</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="research-box">
+                    <a href="https://drive.google.com/file/d/1aqIK4AHY5NCGi7-ZHcQ_wKYb6uwTjy3d/preview" target="_blank">
+                        <img src="documents/photos/7.png" alt="Research 3" class="img-fluid">
+                        <p class="research-name">Research 3</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="research-box">
+                    <a href="https://drive.google.com/file/d/1inVX0TmqQVMadMW-NFc0AiToehCJVkgu/preview" target="_blank">
+                        <img src="documents/photos/8.png" alt="Research 3" class="img-fluid">
+                        <p class="research-name">Research 3</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="research-box">
+                    <a href="https://drive.google.com/file/d/1iX2fMF5N7-qLNCcBeZTVkw-kT5RXa-zG/preview" target="_blank">
+                        <img src="documents/photos/9.png" alt="Research 3" class="img-fluid">
+                        <p class="research-name">Research 3</p>
+                    </a>
+                </div>
+            </div>
+            <!-- Add six more research links in similar fashion -->
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="p-3 text-center">
+        <p>2024 SIH1545 By Team KanyaRaasi</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
 

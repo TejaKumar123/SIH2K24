@@ -1,14 +1,169 @@
-*{
-	margin:0px;
-	padding:0px;
-	box-sizing:border-box;
+/* Special color scheme for page titles */
+.page-title {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-body,html{width:100%;font-family:ubuntu;background-color:#cccccc}
+/* Custom color theme */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
 
-#container{margin:auto;width:90%;border:none;min-height:0px;display:flex;flex-direction:column;align-items:left;justify-content:flex-start;padding:10px 15px;gap:10px 0px;border-radius:6px;box-shadow:0px 0px 4px rgba(0,0,0,0.5);margin-top:10px;margin-bottom:10px;background-color:white;}
+/* Fixed navbar at top with better blur */
+.navbar {
+    background-color: rgba(0, 64, 133, 0.8); /* Dark blue with transparency */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Stronger blur effect */
+    -webkit-backdrop-filter: blur(10px);
+}
 
-li{font-size:100%;margin-top:1px;}
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 
-#imagediv{width:100%;height:auto;margin-top:10px;display:flex;flex-direction:row;align-items:start;justify-content:space-between;gap:5px;flex-wrap:wrap;}
-#imagediv > img{width:200px;height:auto;border-radius:6px;margin-left:15px;}
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-size: 1.1rem;
+}
+
+/* Padding above home section */
+#home {
+    background-color: rgba(0, 64, 133, 0.6); /* Semi-transparent blue */
+    color: #ffffff;
+    min-height: 100vh;
+    padding-top: 120px; /* Increased padding */
+}
+
+/* New Demo Title styling */
+.demo-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0066cc; /* Bright blue */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin-bottom: 40px;
+    text-transform: uppercase; /* Make the title all caps */
+}
+
+/* Demo section styling */
+.demo-section {
+    background-color: #f0f8ff; /* Light blue background for demo section */
+    padding-top: 80px;
+}
+
+/* Demo card design */
+.demo-card {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow for cards */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.demo-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.demo-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Video and iframe adjustments */
+.demo-card video,
+.demo-card iframe {
+    border-radius: 8px; /* Rounded corners for video and game */
+}
+
+
+.gallery img {
+    width: 200px; /* Fixed width */
+    height: auto; /* Auto height to maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Research box styling */
+.research-box {
+    background-color: #f1f1f1; /* Light gray background */
+    border: 1px solid #ccc; /* Light border */
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.research-box:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+.research-box img {
+    width: 300px; /* Fixed width */
+    height: auto; /* Auto height */
+    margin-bottom: 10px; /* Space between image and name */
+    border-radius: 8px;
+    border:1px solid grey
+}
+
+.research-name {
+    background-color: #004085; /* Dark blue background */
+    color: #ffffff; /* White text */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    border: 1px solid #003366; /* Border around name */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration:none;
+}
+
+.research-name:hover {
+    background-color: #0066cc; /* Lighter blue on hover */
+    border-color: #0055aa;
+}
+
+/* Footer styling */
+footer {
+    background-color: #004085;
+    color: #ffffff;
+}
+
+/* Ensuring responsiveness */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+     .research-box {
+        padding: 10px;
+    }
+    .demo-section {
+        padding-top: 50px;
+    }
+
+    .demo-title {
+        font-size: 2rem;
+    }
+}
+
